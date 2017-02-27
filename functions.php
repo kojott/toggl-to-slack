@@ -34,7 +34,7 @@ function send_to_slack($message, $date){
         'username' => USERNAME,
         "icon_emoji" => ":run:",
         "channel" => "#general",
-        'text' => 'George\'s work on '.$date."\n\n".$message,
+        'text' => USERTEXT.$date."\n\n".$message,
         "mrkdwn" => true,
     );
 
@@ -50,10 +50,4 @@ function send_to_slack($message, $date){
     //Execute the request
     $result = curl_exec($ch);
 
-}
-
-function secondsToTime($seconds) {
-    $dtF = new \DateTime('@0');
-    $dtT = new \DateTime("@$seconds");
-    return $dtF->diff($dtT)->format('%h:%i:%s');
 }

@@ -6,6 +6,8 @@ define('APIWORKSPACE', '...'); // ID of a workspace
 define('APICLIENT', '...'); // Company
 define('APISLACKURL', 'https://hooks.slack.com/services/...'); # add slack webhook URL
 define('USERNAME', 'George\'s bot');
+define('USERTEXT', 'George\'s work on '); # it continues with a date
+
 
 require_once 'functions.php';
 
