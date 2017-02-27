@@ -32,7 +32,7 @@ function send_to_slack($message, $date){
     # The JSON data.
     $payload = array(
         'username' => USERNAME,
-        "icon_emoji" => ":run:",
+        "icon_emoji" => ":runner:",
         "channel" => CHANNEL,
         'text' => USERTEXT.$date."\n\n".$message,
         "mrkdwn" => true,
