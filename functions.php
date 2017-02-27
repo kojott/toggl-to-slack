@@ -33,7 +33,7 @@ function send_to_slack($message, $date){
     $payload = array(
         'username' => USERNAME,
         "icon_emoji" => ":run:",
-        "channel" => "#general",
+        "channel" => CHANNEL,
         'text' => USERTEXT.$date."\n\n".$message,
         "mrkdwn" => true,
     );

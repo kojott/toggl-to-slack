@@ -7,7 +7,7 @@ define('APICLIENT', '...'); // Company
 define('APISLACKURL', 'https://hooks.slack.com/services/...'); # add slack webhook URL
 define('USERNAME', 'George\'s bot');
 define('USERTEXT', 'George\'s work on '); # it continues with a date
-
+define('CHANNEL', '#tick-george'); # defines which channel to use in Slack
 
 require_once 'functions.php';
 
